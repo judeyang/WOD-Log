@@ -11,10 +11,15 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
+  *= require font-awesome
  *= require_self
+
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+ @import "font-awesome";
+
+
  .jumbotron {
    background-image:url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1492667168579&di=aa85492c4011948d34919d052787b368&imgtype=0&src=http%3A%2F%2Fww1.sinaimg.cn%2Fcrop.0.0.2000.1124.1000.562%2F005BDeD8jw1f6f8w68q5ej31jk0wnqbr.jpg');
    background-repeat: no-repeat;
