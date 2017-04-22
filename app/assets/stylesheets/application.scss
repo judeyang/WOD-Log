@@ -21,6 +21,10 @@
  @import "bootstrap";
  @import "font-awesome";
 
+
+
+
+
 /***search bar**/
 
 .form-group {
@@ -475,87 +479,13 @@ ul, li {
  }
 
  #down {
-   position: absolute;
+   position: relative;
    opacity: 0.20;
    left: 50%;
    bottom: 10%;
    cursor: pointer;
  }
 
- .card {
-   position: relative;
-   width: 300px;
-   height: 365px;
-   margin-left: auto;
-   margin-right: auto;
-   margin-bottom: 20px;
-   -webkit-perspective: 2000px;
-   -moz-perspective: 2000px;
-   perspective: 2000px;
-   cursor: pointer;
- }
-
- .card img {
-   width: calc(300px - 0px);
-   height: calc(365px - 45px);
-   border-top-left-radius: 6px;
-   border-top-right-radius: 6px;
-   border-style: solid;
-   border-color: rgba(0,0,0,0.16);
-   border-bottom-width: 1px;
- }
-
- .card_front, .card_back {
-   position: absolute;
-   left: 0px;
-   top: 0px;
-   width: inherit;
-   height: inherit;
-   border-style: solid;
-   border-width: 0px;
-   border-radius: 6px;
-   border-color: #666;
-   -webkit-backface-visibility: hidden;
-   backface-visibility: hidden;
-   -webkit-transition: -webkit-transform 0.9s ease-in-out;
-   transition: transform 0.9s ease-in-out;
-   -webkit-transform-style: preserve-3d;
-   -moz-transform-style: preserve-3d;
-   transform-style: preserve-3d;
-   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
- }
-
-
- .card_front:hover, .card_back:hover {
-   left: -4px;
-   top: -4px;
-   box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.5);
- }
-
- .card_front {
-   background-color: white;
- }
-
- .card_back {
-   background-color: #fafffc;
-   -webkit-transform: rotateY(179deg);
-   -ms-transform: rotateY(179deg);
-   transform: rotateY(179deg);
- }
-
- .card.effect_click.flipped .card_front {
-
-   -webkit-transform: rotateY(-179deg);
-   -ms-transform: rotateY(-179deg);
-   transform: rotateY(-179deg);
- }
-
- .card.effect_click.flipped .card_back {
-
-   -webkit-transform: rotateY(0deg);
-   -ms-transform: rotateY(0deg);
-   transform: rotateY(0deg);
- }
 
  .highlight {
    opacity: 0.6;
@@ -614,17 +544,7 @@ ul, li {
    }
  }
 
-/*---------Footer---------
 
-footer {
-    color: white;
-}
-
-footer .footer-below {
-    padding: 25px 0;
-    background-color: #233140;
-}
-*/
 
 /* 管理员后台 index 的 css */
 .custab{
@@ -742,52 +662,30 @@ footer .footer-below {
 
 
 
+//---------Content---------
 
-
-//*---------Box---------
-/*
-.container-fluid .box{
-  padding-bottom: 110px;//内部的底部边距，这样按钮不会很靠近底部了
-  margin: 0 -15px 20px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
-  border-radius: 0;//圆角为0
+.content-section-a {
+    padding: 50px 0;
+    background-color: #f8f8f8;
 }
 
-.box  {
- background-image: url("header.jpg");
- background-repeat: no-repeat;
- background-size: cover;
- margin: 0 -15px 20px;
-
- .box-inner {
-   background-color: rgba(250, 250, 250, 0.39);//背景颜色含透明度
-max-width: 400px;//最大宽度
-margin-top: 250px;//和顶部拉开距离
-margin-left: 50px;
-margin-bottom: 10px;//这样就可以紧接息面的描述文字
-border-bottom-right-radius: 40px;//右上角圆边
-border-top-left-radius: 50px;//左上角圆边
- }
-
-
- .title {
-     text-align: center;
-     margin-top: 30px;//和顶部拉开距离
-     margin-bottom: 10px;
- }
-
- .slogan {
-     color: #ffffff;
-     margin-top: 300px;
-     margin-bottom: 50px;
-     text-align: center;
-     font-size: 25px;
-     top: 12px;
- }
-
- .lead {
-     margin-bottom: 60px;
-     text-align: center;
-     color: white;
- }
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
 }
-*/
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
