@@ -1,11 +1,5 @@
 class AttachmentUploader < CarrierWave::Uploader::Base
 
- belongs_to :user
- belongs_to :job
-
- mount_uploader :attachment, AttachmentUploader
-
- validates :content, presence: true
 
   storage :file
 
